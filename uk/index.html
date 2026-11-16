@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="uk" data-alt="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Duesko · Облік підписок для Mac</title>
+<meta name="description" content="Duesko веде облік ваших підписок і рахунків на Mac: нагадування перед кожним списанням, календар, рядок меню й віджети. Без акаунта й без доступу до банку.">
+<link rel="alternate" hreflang="en" href="https://duesko.stepanix.com/">
+<link rel="alternate" hreflang="uk" href="https://duesko.stepanix.com/uk/">
+<link rel="alternate" hreflang="x-default" href="https://duesko.stepanix.com/">
+<meta property="og:title" content="Duesko · Облік підписок для Mac">
+<meta property="og:description" content="Duesko веде облік ваших підписок і рахунків на Mac: нагадування перед кожним списанням, календар, рядок меню й віджети. Без акаунта й без доступу до банку.">
+<meta property="og:image" content="https://duesko.stepanix.com/assets/overview-light-uk.webp">
+<link rel="icon" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #ffffff; --bg-soft: #f4f7fd; --fg: #111a33; --muted: #5a6478; --line: #e2e8f3; --card: #ffffff;
+  --accent: #2a5ae8; --accent-ink: #ffffff; --accent-soft: #e8efff; --sun: #c97a00;
+  --display: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --body: "Inter", system-ui, -apple-system, sans-serif;
+  --radius: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1022; --bg-soft: #111a36; --fg: #edf1fa; --muted: #9ba6bf; --line: #222d4d; --card: #131d3b;
+    --accent: #5fa0ff; --accent-ink: #08102a; --accent-soft: #1a2a55; --sun: #ffc94d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1022; --bg-soft: #111a36; --fg: #edf1fa; --muted: #9ba6bf; --line: #222d4d; --card: #131d3b;
+  --accent: #5fa0ff; --accent-ink: #08102a; --accent-soft: #1a2a55; --sun: #ffc94d; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img { max-width: 100%; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; letter-spacing: -0.02em; }
+h1 { font-size: clamp(42px, 7vw, 76px); font-weight: 800; line-height: 1.04; }
+h2 { font-size: clamp(30px, 4.4vw, 46px); font-weight: 800; line-height: 1.1; }
+h3 { font-size: 19px; font-weight: 700; }
+em.hl { font-style: italic; color: var(--accent); }
+p { margin: 0; }
+.lead { font-size: clamp(18px, 2vw, 21px); color: var(--muted); max-width: 42ch; margin-inline: auto; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px; font: 600 16px/1 var(--body); text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--fg); transition: transform .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.btn.soon { opacity: .6; cursor: default; }
+.btn.soon:hover { transform: none; }
+.btn svg { width: 18px; height: 18px; }
+
+header.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.nav .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 800 20px var(--display); text-decoration: none; }
+.brand img { width: 32px; height: 32px; }
+.nav nav { display: flex; gap: 22px; margin-left: auto; font-size: 15px; color: var(--muted); }
+.nav nav a { text-decoration: none; }
+.nav nav a:hover { color: var(--fg); }
+.nav .btn { padding: 10px 16px; font-size: 14px; }
+@media (max-width: 640px) { .nav nav { display: none; } .nav .btn { margin-left: auto; } }
+
+.hero { text-align: center; padding-block: 72px 40px; display: grid; gap: 22px; justify-items: center; }
+.hero .icon { width: 104px; height: 104px; }
+.hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 6px; }
+.hero small { color: var(--muted); font-size: 14px; }
+
+/* Real app windows, captured with their own frame. */
+.shot { display: block; margin: 0 auto; border-radius: 14px; box-shadow: 0 30px 80px -30px rgb(20 40 110 / .38), 0 0 0 1px var(--line); }
+.shot img, .shot source { display: block; }
+.shot img { width: 100%; height: auto; border-radius: 14px; }
+.hero-shot { max-width: 1000px; margin-top: 8px; }
+
+section { padding-block: 88px; }
+.center { text-align: center; display: grid; gap: 14px; justify-items: center; margin-bottom: 44px; }
+.center p { color: var(--muted); max-width: 54ch; font-size: 18px; }
+.soft { background: var(--bg-soft); border-block: 1px solid var(--line); }
+
+/* Reminders: what Duesko tells you, as a list of notices. */
+.notices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.notice { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); min-width: 0; }
+.notice .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--accent); }
+.notice .dot.sun { background: var(--sun); }
+.notice b { font-weight: 600; display: block; }
+.notice span { color: var(--muted); font-size: 15px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.card p { color: var(--muted); font-size: 16px; }
+.badge { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.badge svg { width: 22px; height: 22px; }
+.pro { display: inline-block; vertical-align: middle; margin-left: 8px; padding: 2px 7px; border-radius: 999px; font: 800 11px/1.4 var(--body); letter-spacing: .06em; color: #fff; background: linear-gradient(90deg, #5fb4ff, #3a88f9, #2a5ae8); }
+h2 .pro { font-size: 13px; vertical-align: 0.5em; }
+
+/* Text beside a screenshot. */
+.split { display: grid; grid-template-columns: 1fr 1.25fr; gap: 56px; align-items: center; }
+.split.flip { grid-template-columns: 1.25fr 1fr; }
+.split.flip .text { order: 2; }
+.split .text { display: grid; gap: 16px; }
+.split .text p { color: var(--muted); font-size: 18px; }
+.split h3 { font-size: clamp(24px, 3vw, 30px); font-weight: 800; }
+.split ul { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 8px; color: var(--muted); font-size: 16px; }
+.split li { display: flex; gap: 10px; }
+.split li::before { content: "✓"; color: var(--accent); font-weight: 700; }
+.split .popover { max-width: 340px; }
+@media (max-width: 860px) { .split, .split.flip { grid-template-columns: 1fr; gap: 32px; } .split.flip .text { order: 0; } }
+.stack { display: grid; gap: 48px; }
+
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; max-width: 780px; margin-inline: auto; }
+.plan { border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: grid; gap: 16px; align-content: start; background: var(--card); }
+.plan.best { border: 2px solid var(--accent); }
+.price { font: 800 44px/1 var(--display); }
+.price small { font: 500 15px var(--body); color: var(--muted); margin-left: 6px; }
+.plan ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.plan li { display: flex; gap: 10px; font-size: 16px; }
+.plan li::before { content: "✓"; color: var(--accent); font-weight: 700; }
+.plan .btn { justify-content: center; }
+.plan .note { color: var(--muted); font-size: 14px; }
+
+.faq { max-width: 760px; margin-inline: auto; display: grid; gap: 10px; }
+details { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; background: var(--card); }
+summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--accent); font-weight: 700; }
+details[open] summary::after { content: "–"; }
+details p { color: var(--muted); margin-top: 10px; font-size: 16px; }
+
+.also-list { display: grid; gap: 12px; max-width: 560px; margin: 56px auto 0; }
+.also { display: flex; align-items: center; gap: 16px; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: inherit; background: var(--card); }
+.also:hover { border-color: var(--accent); }
+.also img { width: 48px; height: 48px; flex: none; border-radius: 22%; }
+.also > span:nth-child(2) { display: grid; gap: 2px; min-width: 0; }
+.also small { color: var(--muted); font-size: 13px; }
+.also b { font: 700 17px var(--display); }
+.also span span { color: var(--muted); font-size: 15px; }
+.also .arrow { margin-left: auto; color: var(--accent); font-weight: 700; }
+
+footer { border-top: 1px solid var(--line); padding-block: 36px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+footer .links { display: flex; gap: 20px; margin-left: auto; flex-wrap: wrap; }
+footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
+
+.doc { max-width: 720px; padding-block: 56px 80px; }
+.doc h1 { font-size: clamp(34px, 5vw, 48px); }
+.doc .updated { color: var(--muted); font-size: 15px; margin-top: 10px; }
+.doc h2 { font-size: 22px; margin-top: 40px; }
+.doc p, .doc li { color: var(--muted); font-size: 17px; }
+.doc p { margin-top: 12px; }
+.doc ul, .doc ol { margin: 12px 0 0; padding-left: 22px; display: grid; gap: 6px; }
+.doc strong { color: var(--fg); font-weight: 600; }
+.doc a { color: var(--accent); }
+
+.lang { display: flex; flex: none; padding: 3px; border: 1px solid var(--line); border-radius: 999px; font: 600 13px/1 var(--body); }
+.lang a { padding: 6px 10px; border-radius: 999px; text-decoration: none; color: var(--muted); }
+.lang a:hover { color: var(--fg); }
+.lang a[aria-current] { background: var(--accent-soft); color: var(--accent); }
+.lang a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 640px) { .nav .wrap { gap: 14px; } .nav .lang { margin-left: auto; } .nav .btn { margin-left: 0; } }
+@media (max-width: 480px) { .nav .btn { display: none; } }
+</style>
+<script>
+/* Remembers the chosen language and opens that version on later visits. English is the default. */
+(function () {
+  try {
+    var root = document.documentElement, saved = localStorage.getItem("duesko-lang");
+    if (saved && saved !== root.lang && root.dataset.alt) location.replace(root.dataset.alt + location.search + location.hash);
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest && e.target.closest("[data-set-lang]");
+      if (link) localStorage.setItem("duesko-lang", link.getAttribute("data-set-lang"));
+    });
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="../assets/icon.png" alt="">Duesko</a>
+    <nav aria-label="Sections"><a href="#features">Можливості</a><a href="#pricing">Ціна</a><a href="#faq">Питання</a></nav>
+    <div class="lang" role="group" aria-label="Мова">
+      <a href="../" hreflang="en" lang="en" data-set-lang="en">EN</a>
+      <a href="./" aria-current="true" lang="uk" data-set-lang="uk" title="Українська">UA</a>
+    </div>
+    <a class="btn primary" href="https://github.com/stepsergius/duesko-app/releases/latest/download/Duesko.dmg">Завантажити для Mac</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <img class="icon" src="../assets/icon.png" alt="" width="104" height="104">
+    <h1>Кожна підписка — <em class="hl">вчасно.</em></h1>
+    <p class="lead">Duesko пам'ятає, за що ви платите, нагадує перед кожним списанням і показує, куди йдуть гроші. На вашому Mac, без акаунта й без входу в банк.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://github.com/stepsergius/duesko-app/releases/latest/download/Duesko.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Завантажити безкоштовно</a>
+      <a class="btn" href="#pricing">Отримати Pro</a>
+    </div>
+    <small>7 днів Pro у подарунок · macOS 26 Tahoe або новіша · 8 мов</small>
+  </div>
+  <div class="wrap">
+    <picture class="shot hero-shot"><source media="(prefers-color-scheme: dark)" srcset="../assets/overview-dark-uk.webp"><img src="../assets/overview-light-uk.webp" alt="Огляд у Duesko: списання цього місяця, що залишилось сплатити, бюджет і витрати за категоріями" width="1800" height="1200" decoding="async"></picture>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="center"><h2>Знайте <em class="hl">до списання.</em></h2><p>Duesko сам рахує кожне списання за датою і періодом оплати та нагадує вчасно, щоб ви встигли скасувати підписку чи поповнити картку.</p></div>
+      <div class="notices">
+<div class="notice"><span class="dot sun"></span><span><b>Netflix</b><span>Продовжиться завтра · 249 ₴</span></span></div>
+<div class="notice"><span class="dot "></span><span><b>Пробний період закінчиться за 3 дні</b><span>Notion Plus · скасувати чи лишити</span></span></div>
+<div class="notice"><span class="dot "></span><span><b>Ціна зросте з наступного місяця</b><span>Spotify · 149 ₴ → 169 ₴</span></span></div>
+<div class="notice"><span class="dot sun"></span><span><b>Електроенергія</b><span>До п'ятниці · минулого разу 1 112 ₴</span></span></div>
+<div class="notice"><span class="dot "></span><span><b>Річне продовження за 14 днів</b><span>1Password · 1 490 ₴</span></span></div>
+<div class="notice"><span class="dot "></span><span><b>Залишилось сплатити цього тижня</b><span>4 списання · 2 699 ₴</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="features">
+    <div class="wrap">
+      <div class="center"><h2>Невеликий застосунок. <em class="hl">Ясна картина.</em></h2><p>Додати сервіс — кілька секунд: Duesko знає сотні сервісів, їхні іконки й звичні ціни.</p></div>
+      <div class="grid">
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span><h3>Нагадування до ладу</h3><p>За кілька днів до щомісячного списання, за два тижні до річного, і окремо — коли закінчується пробний період.</p></div>
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></span><h3>Будь-який розклад</h3><p>Щотижня, щомісяця, раз на 3 місяці, щороку чи кожні 10 днів. І рахунки, сума яких щоразу інша.</p></div>
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><h3>Зміни ціни</h3><p>Запишіть нову ціну з певної дати. Минулі місяці лишаться зі старою сумою, підсумки не зіб'ються.</p></div>
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Будь-яка валюта</h3><p>Платите в доларах, євро й гривнях? Duesko переведе все в основну валюту й покаже поруч оригінальну суму.</p></div>
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></span><h3>Сплачено чи ні</h3><p>Позначте списання сплаченим, навіть заздалегідь. «Залишилось сплатити» рахує лише те, що попереду: до кінця тижня, місяця чи до зарплати.</p></div>
+<div class="card"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><h3>Ваші дані — ваші копії</h3><p>Збережіть усе в резервну копію або експортуйте CSV для Numbers чи Excel. Відновити можна будь-коли.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap stack">
+      <div class="split">
+        <div class="text"><h2>Місяць на одному екрані.</h2><p>Календар показує кожне списання в його день і суму за місяць. Клацніть день, щоб додати підписку, яка тоді починається.</p><ul><li>Сплачені списання позначено</li><li>Пробні періоди й зміни ціни видно одразу</li><li>Списки розділяють Особисте, Роботу й Сім'ю</li></ul></div>
+        <picture class="shot"><source media="(prefers-color-scheme: dark)" srcset="../assets/calendar-dark-uk.webp"><img src="../assets/calendar-light-uk.webp" alt="Календар у Duesko зі списаннями в їхні дні" width="1800" height="1200" loading="lazy" decoding="async"></picture>
+      </div>
+      <div class="split flip">
+        <div class="text"><h2>Один клік із рядка меню.</h2><p>Скільки очікується цього місяця, найближчі списання й кнопка «Додати» — не відкриваючи головне вікно.</p><ul><li>Показує, що сплатити сьогодні</li><li>Швидке додавання звідусіль</li><li>Відкривається під час входу, якщо хочете</li></ul></div>
+        <picture class="shot popover"><source media="(prefers-color-scheme: dark)" srcset="../assets/popover-dark-uk.webp"><img src="../assets/popover-light-uk.webp" alt="Вікно Duesko в рядку меню: сума за місяць і найближчі списання" width="664" height="818" loading="lazy" decoding="async"></picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="center"><h2>Duesko Pro. <em class="hl">Для повної картини.</em></h2><p>Спробуйте все безкоштовно 7 днів. Потім лишайтеся на безкоштовній версії або купіть Pro один раз.</p></div>
+      <div class="stack">
+        <div class="split">
+          <div class="text"><h3>Аналітика й бюджет<span class="pro">PRO</span></h3><p>Куди йдуть гроші за категоріями й сервісами, як змінюються витрати протягом року, і бюджет на місяць, який попередить, перш ніж ви його перевищите.</p></div>
+          <picture class="shot"><source media="(prefers-color-scheme: dark)" srcset="../assets/analytics-dark-uk.webp"><img src="../assets/analytics-light-uk.webp" alt="Аналітика в Duesko: витрати за місяцями, прогноз і найдорожчі сервіси" width="1800" height="1200" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="split flip">
+          <div class="text"><h3>Віджети<span class="pro">PRO</span></h3><p>Найближчий платіж, наступний тиждень і поступ місяця на робочому столі чи в Центрі сповіщень. Вони теж беруть вашу колірну схему.</p></div>
+          <picture class="shot"><source media="(prefers-color-scheme: dark)" srcset="../assets/widgets-dark-uk.webp"><img src="../assets/widgets-light-uk.webp" alt="Віджети Duesko: найближчий платіж, найближчі списання й поступ місяця" width="1800" height="927" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="split">
+          <div class="text"><h3>На ваш смак<span class="pro">PRO</span></h3><p>Вісім колірних схем для всього застосунку й десять іконок. А ще платежі в Календарі, імпорт з інших застосунків, вкладення й податок до ціни.</p></div>
+          <picture class="shot"><source media="(prefers-color-scheme: dark)" srcset="../assets/appearance-dark-uk.webp"><img src="../assets/appearance-light-uk.webp" alt="Колірні схеми й іконки в налаштуваннях Duesko" width="1080" height="445" loading="lazy" decoding="async"></picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="center"><h2>Почніть безкоштовно. <em class="hl">Ростіть із Pro.</em></h2><p>Кожне нове встановлення отримує весь Pro на 7 днів, картка не потрібна.</p></div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <div class="price">$0</div>
+          <ul><li>До 5 підписок</li><li>Нагадування перед кожним списанням</li><li>Календар і рядок меню</li><li>Будь-яка валюта з перерахунком</li><li>Резервні копії й експорт CSV</li></ul>
+          <a class="btn" href="https://github.com/stepsergius/duesko-app/releases/latest/download/Duesko.dmg">Завантажити безкоштовно</a>
+        </div>
+        <div class="plan best">
+          <h3>Pro</h3>
+          <div class="price">$9.99<small>один раз</small></div>
+          <ul><li>Необмежено підписок</li><li>Аналітика й бюджет на місяць</li><li>Віджети</li><li>Платежі в Календарі й файл .ics</li><li>Імпорт з інших застосунків (CSV)</li><li>Вкладення й податок</li><li>Списки, власні категорії й способи оплати</li><li>Колірні схеми й іконки</li><li>До 3 Mac, безкоштовні оновлення</li></ul>
+          <span class="btn primary soon" aria-disabled="true">Незабаром</span>
+          <p class="note">Повернемо гроші протягом 14 днів.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="center"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h2>Ваші гроші — ваша справа.</h2><p>Duesko ніколи не просить входу в банк і не має акаунтів. Ваші підписки зберігаються лише на вашому Mac. Жодної аналітики й стеження. В інтернет Duesko ходить лише по курси валют та іконки сервісів (обидва можна вимкнути) і щоб перевірити ключ Pro.</p></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="center"><h2>Питання</h2></div>
+      <div class="faq">
+<details><summary>Duesko під'єднується до мого банку?</summary><p>Ні. Підписки ви додаєте самі, і це кілька секунд, бо Duesko знає сотні сервісів. Жодні дані про ваші рахунки чи картки не залишають ваш Mac.</p></details>
+<details><summary>macOS каже, що не може перевірити Duesko. Що робити?</summary><p>Duesko поширюється не через App Store. Якщо macOS заблокує його під час першого запуску, відкрийте Системні параметри → Приватність і безпека, прокрутіть униз і натисніть <b>Усе одно відкрити</b>. Це потрібно лише один раз.</p></details>
+<details><summary>Що буде, коли закінчиться пробний тиждень?</summary><p>Duesko і далі працюватиме безкоштовно, до 5 підписок. Нічого з доданого не зникне, нагадування приходитимуть як і раніше. Можливості Pro буде закрито, доки ви не купите Pro.</p></details>
+<details><summary>Можна перенести підписки з іншого застосунку?</summary><p>Так, у Pro: Duesko імпортує CSV з інших застосунків і дає зіставити їхні колонки. Файли, експортовані з Duesko, імпортуються й у безкоштовній версії.</p></details>
+<details><summary>Чи є версія для iPhone?</summary><p>Поки ні, Duesko зроблено для Mac. Але платежі можна показати в Календарі, а він синхронізує їх на iPhone через iCloud чи Google.</p></details>
+<details><summary>Як активувати Pro?</summary><p>Після покупки ключ ліцензії надійде листом. Вставте його в Duesko → Налаштування → Pro.</p></details>
+<details><summary>Чи можна повернути гроші?</summary><p>Так. Якщо Duesko вам не підійде, напишіть протягом 14 днів після покупки — і ми повернемо гроші.</p></details>
+      </div>
+      <div class="also-list">
+        <a class="also" href="https://tapko.stepanix.com/uk/">
+          <img src="../assets/tapko.png" alt="" width="48" height="48">
+          <span><small>Ще від Stepanix</small><b>Tapko</b><span>Власні жести трекпада на Mac: середній клік, закриття вікон, запуск застосунків і більше.</span></span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="also" href="https://klavko.stepanix.com/uk/">
+          <img src="../assets/klavko.png" alt="" width="48" height="48">
+          <span><small>Ще від Stepanix</small><b>Klavko</b><span>Безкоштовний помічник для набору на Mac: виправляє неправильну розкладку й описки просто під час набору.</span></span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Stepanix</span>
+    <div class="links">
+      <a href="#faq">Підтримка</a>
+      <a href="#pricing">Ціна</a>
+      <a href="privacy.html">Приватність</a>
+      <a href="terms.html">Умови</a>
+      <a href="mailto:stepsergius@gmail.com">stepsergius@gmail.com</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
