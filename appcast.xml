@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Duesko</title>
+    <link>https://duesko.stepanix.com/appcast.xml</link>
+    <language>en</language>
+    <item>
+      <title>Duesko 0.2</title>
+      <pubDate>Tue, 17 Nov 2026 23:33:24 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.2/Duesko.dmg"
+                 length="10247404" type="application/octet-stream" sparkle:edSignature="eaXbo8irgnvlSXrF6ApG3rydiRyK1s63kgTnVZTE6zI/ifMj4FfrCherSftDvY3yB528qZicmpIHR1MVVoZkBg=="/>
+    </item>
+  </channel>
+</rss>
