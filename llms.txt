@@ -1,0 +1,75 @@
+# Duesko
+
+> Duesko keeps track of your subscriptions and bills on your Mac: reminders before every charge, a calendar, the menu bar and widgets. No account, no bank login.
+
+Duesko keeps track of what you pay for, reminds you before every charge and shows where the money goes. On your Mac, with no account and no bank login.
+
+## Facts
+
+- What it is: a subscription and bill tracker for Mac (native macOS app)
+- Made by: Stepanix (https://stepanix.com/), which also makes Klavko and Tapko
+- Needs: macOS 26 Tahoe or later
+- Price: free with up to 5 subscriptions; Duesko Pro is $9.99 once, not a subscription
+- Trial: every new install gets all of Pro for 7 days, no card needed
+- Refunds: 14-day money-back guarantee
+- Languages: 8, including English and Ukrainian
+- Privacy: Duesko never asks for a bank login and has no account. Your subscriptions live only on your Mac. No analytics, no tracking. It goes online only for exchange rates and service icons, which you can turn off, and to check a Pro key.
+- Download: https://github.com/stepsergius/duesko-app/releases/latest/download/Duesko.dmg
+- Website: https://duesko.stepanix.com/ (English), https://duesko.stepanix.com/uk/ (Ukrainian)
+- Contact: stepsergius@gmail.com
+
+## Free edition
+
+- Up to 5 subscriptions
+- Reminders before every charge
+- Calendar and menu bar
+- Any currency, with conversion
+- Backups and CSV export
+
+## Duesko Pro
+
+- Unlimited subscriptions
+- Analytics and monthly budget
+- Widgets
+- Payments in Calendar and .ics
+- Import from other apps (CSV)
+- Attachments and tax
+- Lists, your own categories and payment methods
+- Colour schemes and app icons
+- Up to 3 Macs, free updates
+
+## Questions
+
+### Does Duesko connect to my bank?
+
+No. You add subscriptions yourself, which takes seconds since Duesko knows hundreds of services. Nothing about your accounts or cards ever leaves your Mac.
+
+### macOS says it can't verify Duesko. What do I do?
+
+Duesko isn't distributed through the App Store. If macOS blocks it the first time, open System Settings → Privacy & Security, scroll down and click Open Anyway. You only do this once.
+
+### What happens when the free week ends?
+
+Duesko keeps working for free with up to 5 subscriptions. Nothing you added is deleted, and reminders keep coming. Pro features are locked until you buy Pro.
+
+### Can I bring my subscriptions from another app?
+
+Yes, with Pro: Duesko imports CSV files from other apps and lets you match their columns. Files exported from Duesko import in the free edition too.
+
+### Is there an iPhone version?
+
+Not yet. Duesko is made for the Mac. You can show your payments in the Calendar app, which syncs them to your iPhone through iCloud or Google.
+
+### How do I activate Pro?
+
+After you buy, the license key comes by email. Paste it in Duesko → Settings → Pro.
+
+### Can I get a refund?
+
+Yes. If Duesko doesn't work for you, write within 14 days of purchase and you'll get your money back.
+
+## Pages
+
+- [Duesko](https://duesko.stepanix.com/): features, pricing and questions
+- [Privacy](https://duesko.stepanix.com/privacy.html): what data the app and the site handle
+- [Terms](https://duesko.stepanix.com/terms.html): licence and refunds
