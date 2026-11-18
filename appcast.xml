@@ -5,15 +5,21 @@
     <link>https://duesko.stepanix.com/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.4</title>
-      <pubDate>Wed, 18 Nov 2026 13:34:59 +0000</pubDate>
-      <sparkle:version>4</sparkle:version>
-      <sparkle:shortVersionString>0.4</sparkle:shortVersionString>
+      <title>Duesko 0.6</title>
+      <pubDate>Wed, 18 Nov 2026 23:53:07 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p><b>Dates in another year show the year.</b> A yearly subscription's next charges now read, for example, “Thu, 18 Nov 2027”, so they can't be mistaken for this year's.</p>
-<p><b>Дати в іншому році показують рік.</b> Наступні списання щорічної підписки тепер виглядають, наприклад, як «чт, 18 лист. 2027 р.», тож їх не сплутати з цьогорічними.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.4/Duesko.dmg"
-                 length="9989362" type="application/octet-stream" sparkle:edSignature="h2Y3OPTuFhvATMkRJSiwDzZTaq5SrTk6PGVsNMc2VGVunvYybCkmIiExGoHBtxk0U0HqRzl8Bk6vqWGIccRaAA=="/>
+      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
+<p><b>Report a Problem…</b> in the Help menu and in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
+<p><b>Columns in the subscription table</b> can be dragged into any order and hidden or shown again by right-clicking a column header. Duesko remembers your choice.</p>
+<p><b>Restoring a backup</b> made on the same Mac now keeps your own categories, payment methods and lists.</p>
+<p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
+<p><b>«Повідомити про проблему…»</b> у меню «Довідка» та в Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>
+<p><b>Стовпчики таблиці підписок</b> можна перетягувати в будь-якому порядку, а також ховати й повертати правим клацанням на заголовку. Duesko запам'ятовує ваш вибір.</p>
+<p><b>Відновлення резервної копії</b>, зробленої на цьому ж Mac, тепер зберігає ваші власні категорії, способи оплати та списки.</p>]]></description>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.6/Duesko.dmg"
+                 length="10920618" type="application/octet-stream" sparkle:edSignature="hhHF7jLZ+y+gWKu7FLcxXf2v6CLNFY10h4Q7LQ+C6UDUsYVtu+NyeoSCXXsD+5jPtmI0hlMSsLnuRzKN1Yk4AA=="/>
     </item>
   </channel>
 </rss>

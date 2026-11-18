@@ -5,34 +5,30 @@
     <link>https://duesko.stepanix.com/appcast-windows.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.5</title>
-      <pubDate>Wed, 18 Nov 2026 21:57:41 +0000</pubDate>
-      <sparkle:version>0.5.0</sparkle:version>
-      <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+      <title>Duesko 0.6</title>
+      <pubDate>Wed, 18 Nov 2026 23:57:20 +0000</pubDate>
+      <sparkle:version>0.6.0</sparkle:version>
+      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p>The first version of Duesko for Windows.</p>
-<ul>
-<li>Every screen of the Mac app: overview, calendar, analytics, subscription lists, budget and settings.</li>
-<li>Reminders from Windows, even when Duesko is closed, and a summary in the notification area.</li>
-<li>Opens backups and CSV files made by the Mac version.</li>
-</ul>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.5/Duesko-0.5-x64.msi"
-                 length="75444704" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="CJvIB+9xAdR34nT+3QDY15H8dD7FnfrxDcFtuP+KtLe+six0PHGlIt3qCs/pUUy4Kix6Th5L1cUo6pfkcXocBg=="/>
+      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
+<p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
+<p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
+<p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-x64.msi"
+                 length="75543020" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="UbI85lFf6hhwv4Oh0zwpNG/E6MbkJ/51ArWB0DU2p0u+fAdjFxQngI8VaKX7cOVGlcPDFQ1xqitD5xoddTkDAg=="/>
     </item>
     <item>
-      <title>Duesko 0.5</title>
-      <pubDate>Wed, 18 Nov 2026 21:57:41 +0000</pubDate>
-      <sparkle:version>0.5.0</sparkle:version>
-      <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+      <title>Duesko 0.6</title>
+      <pubDate>Wed, 18 Nov 2026 23:57:20 +0000</pubDate>
+      <sparkle:version>0.6.0</sparkle:version>
+      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p>The first version of Duesko for Windows.</p>
-<ul>
-<li>Every screen of the Mac app: overview, calendar, analytics, subscription lists, budget and settings.</li>
-<li>Reminders from Windows, even when Duesko is closed, and a summary in the notification area.</li>
-<li>Opens backups and CSV files made by the Mac version.</li>
-</ul>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.5/Duesko-0.5-arm64.msi"
-                 length="72429988" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="/H/+Y9UX+0bJ253NRoNxr78R9jjyL9Lx0OCcQ9sVYVvjmO0YsVl6QzHtjuDBWooZgRYrLufOru9Aeg1jD8HOAw=="/>
+      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
+<p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
+<p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
+<p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-arm64.msi"
+                 length="72556976" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="iyE2NiM3zqsWAdceMzeUEDEKnFjUIy7EvhlbAOghN2D+RvZyJHRusfj2UrQxE9zNX4g/ZC7Tk1R4syWouga7CA=="/>
     </item>
   </channel>
 </rss>

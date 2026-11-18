@@ -15,7 +15,7 @@ Duesko keeps track of what you pay for, reminds you before every charge and show
 - Languages: 8, including English and Ukrainian
 - Privacy: Duesko never asks for a bank login and has no account. Your subscriptions live only on your Mac. No analytics, no tracking. It goes online only for exchange rates and service icons, which you can turn off, and to check a Pro key.
 - Download: https://github.com/stepsergius/duesko-app/releases/latest/download/Duesko.dmg
-- Also for Windows 10 and 11: https://github.com/stepsergius/duesko-app/releases/download/windows-v0.5/Duesko-0.5-x64.msi (x64), https://github.com/stepsergius/duesko-app/releases/download/windows-v0.5/Duesko-0.5-arm64.msi (ARM64); no widgets or live calendar sync there yet
+- Also for Windows 10 and 11: https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-x64.msi (x64), https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-arm64.msi (ARM64); no widgets or live calendar sync there yet
 - Website: https://duesko.stepanix.com/ (English), https://duesko.stepanix.com/uk/ (Ukrainian)
 - Contact: stepsergius@gmail.com
 
@@ -33,6 +33,7 @@ Duesko keeps track of what you pay for, reminds you before every charge and show
 - Analytics and monthly budget
 - Widgets
 - Payments in Calendar and .ics
+- Ask Claude about your subscriptions
 - Import from other apps (CSV)
 - Attachments and tax
 - Lists, your own categories and payment methods
