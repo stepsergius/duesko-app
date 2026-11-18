@@ -80,6 +80,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .hero .icon { width: 104px; height: 104px; }
 .hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 6px; }
 .hero small { color: var(--muted); font-size: 14px; }
+.hero small a, .plan .alt a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.plan .alt { display: block; margin-top: 10px; text-align: center; color: var(--muted); font-size: 14px; }
 
 /* Real app windows, captured with their own frame. */
 .shot { display: block; margin: 0 auto; border-radius: 14px; box-shadow: 0 30px 80px -30px rgb(20 40 110 / .38), 0 0 0 1px var(--line); }
