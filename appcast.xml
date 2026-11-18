@@ -5,14 +5,14 @@
     <link>https://duesko.stepanix.com/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.2</title>
-      <pubDate>Tue, 17 Nov 2026 23:33:24 +0000</pubDate>
-      <sparkle:version>2</sparkle:version>
-      <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
+      <title>Duesko 0.3</title>
+      <pubDate>Wed, 18 Nov 2026 13:23:18 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.2/Duesko.dmg"
-                 length="10247404" type="application/octet-stream" sparkle:edSignature="eaXbo8irgnvlSXrF6ApG3rydiRyK1s63kgTnVZTE6zI/ifMj4FfrCherSftDvY3yB528qZicmpIHR1MVVoZkBg=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.3/Duesko.dmg"
+                 length="9988058" type="application/octet-stream" sparkle:edSignature="JrtpDoD2DaXi/H8Qw3g57H8U2JSjX1tJ9NMiEPONooAfinC3hOFukZr0cb2NqjlIJLmGDNG/exfMpZ4vOqeiAQ=="/>
     </item>
   </channel>
 </rss>

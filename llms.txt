@@ -44,9 +44,9 @@ Duesko keeps track of what you pay for, reminds you before every charge and show
 
 No. You add subscriptions yourself, which takes seconds since Duesko knows hundreds of services. Nothing about your accounts or cards ever leaves your Mac.
 
-### macOS says it can't verify Duesko. What do I do?
+### Is Duesko safe to install outside the App Store?
 
-Duesko isn't distributed through the App Store. If macOS blocks it the first time, open System Settings → Privacy & Security, scroll down and click Open Anyway. You only do this once.
+Yes. Duesko is signed with the developer's Apple Developer ID and notarized by Apple, which checks it for malicious software before it's released. macOS opens it without warnings, and updates come from Duesko itself, signed the same way.
 
 ### What happens when the free week ends?
 
