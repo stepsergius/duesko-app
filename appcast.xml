@@ -5,14 +5,15 @@
     <link>https://duesko.stepanix.com/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.3</title>
-      <pubDate>Wed, 18 Nov 2026 13:23:18 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
+      <title>Duesko 0.4</title>
+      <pubDate>Wed, 18 Nov 2026 13:34:59 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.3/Duesko.dmg"
-                 length="9988058" type="application/octet-stream" sparkle:edSignature="JrtpDoD2DaXi/H8Qw3g57H8U2JSjX1tJ9NMiEPONooAfinC3hOFukZr0cb2NqjlIJLmGDNG/exfMpZ4vOqeiAQ=="/>
+      <description><![CDATA[<p><b>Dates in another year show the year.</b> A yearly subscription's next charges now read, for example, “Thu, 18 Nov 2027”, so they can't be mistaken for this year's.</p>
+<p><b>Дати в іншому році показують рік.</b> Наступні списання щорічної підписки тепер виглядають, наприклад, як «чт, 18 лист. 2027 р.», тож їх не сплутати з цьогорічними.</p>]]></description>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.4/Duesko.dmg"
+                 length="9989362" type="application/octet-stream" sparkle:edSignature="h2Y3OPTuFhvATMkRJSiwDzZTaq5SrTk6PGVsNMc2VGVunvYybCkmIiExGoHBtxk0U0HqRzl8Bk6vqWGIccRaAA=="/>
     </item>
   </channel>
 </rss>
