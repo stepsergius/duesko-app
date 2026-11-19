@@ -5,30 +5,38 @@
     <link>https://duesko.stepanix.com/appcast-windows.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.6</title>
-      <pubDate>Wed, 18 Nov 2026 23:57:20 +0000</pubDate>
-      <sparkle:version>0.6.0</sparkle:version>
-      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+      <title>Duesko 0.6.1</title>
+      <pubDate>Thu, 19 Nov 2026 11:44:46 +0000</pubDate>
+      <sparkle:version>0.6.1</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
+      <description><![CDATA[<h3>Duesko 0.6.1</h3>
+<p><b>Simpler Settings → Appearance.</b> The app icon colours are gone: Windows shows Duesko's own icon in the Start menu, File Explorer and on pinned taskbar buttons anyway. Light and Dark and the eight colour schemes stay.</p>
+<p><b>Простіші Налаштування → Вигляд.</b> Вибору кольору іконки програми більше немає: Windows однаково показує власну іконку Duesko в меню «Пуск», Файловому провіднику й на закріплених кнопках панелі завдань. Світлий і темний вигляд та вісім колірних схем лишаються.</p>
+<h3>Duesko 0.6</h3>
+<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
 <p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
 <p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
 <p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-x64.msi"
-                 length="75543020" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="UbI85lFf6hhwv4Oh0zwpNG/E6MbkJ/51ArWB0DU2p0u+fAdjFxQngI8VaKX7cOVGlcPDFQ1xqitD5xoddTkDAg=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.1/Duesko-0.6.1-x64.msi"
+                 length="75526636" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="uY7QN1Dc62ezh4IiBPxKEQh+0T1sNZlG5zONXpujdVvo80wNYWIjLuPH+wBg8sevM5O1tMnhg5ZtXjpT07T6BA=="/>
     </item>
     <item>
-      <title>Duesko 0.6</title>
-      <pubDate>Wed, 18 Nov 2026 23:57:20 +0000</pubDate>
-      <sparkle:version>0.6.0</sparkle:version>
-      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+      <title>Duesko 0.6.1</title>
+      <pubDate>Thu, 19 Nov 2026 11:44:46 +0000</pubDate>
+      <sparkle:version>0.6.1</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
+      <description><![CDATA[<h3>Duesko 0.6.1</h3>
+<p><b>Simpler Settings → Appearance.</b> The app icon colours are gone: Windows shows Duesko's own icon in the Start menu, File Explorer and on pinned taskbar buttons anyway. Light and Dark and the eight colour schemes stay.</p>
+<p><b>Простіші Налаштування → Вигляд.</b> Вибору кольору іконки програми більше немає: Windows однаково показує власну іконку Duesko в меню «Пуск», Файловому провіднику й на закріплених кнопках панелі завдань. Світлий і темний вигляд та вісім колірних схем лишаються.</p>
+<h3>Duesko 0.6</h3>
+<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app for Windows. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
 <p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
 <p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
 <p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6/Duesko-0.6-arm64.msi"
-                 length="72556976" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="iyE2NiM3zqsWAdceMzeUEDEKnFjUIy7EvhlbAOghN2D+RvZyJHRusfj2UrQxE9zNX4g/ZC7Tk1R4syWouga7CA=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.1/Duesko-0.6.1-arm64.msi"
+                 length="72479152" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="v8ava+xF9xrSDS5ZOh+KT8JkrFE2e4zormRTFi3YQvOQg5RmjSAQUWMVJZwlaP8B/x3GyP4Dy394BXhw/9WCBQ=="/>
     </item>
   </channel>
 </rss>
