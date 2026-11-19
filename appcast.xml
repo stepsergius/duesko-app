@@ -5,12 +5,17 @@
     <link>https://duesko.stepanix.com/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.6.1</title>
-      <pubDate>Thu, 19 Nov 2026 09:42:56 +0000</pubDate>
-      <sparkle:version>7</sparkle:version>
-      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+      <title>Duesko 0.6.2</title>
+      <pubDate>Thu, 19 Nov 2026 20:18:12 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h3>Duesko 0.6.1</h3>
+      <description><![CDATA[<h3>Duesko 0.6.2</h3>
+<p><b>Free trials without a price.</b> Turn on “Free trial” and leave the price empty if you got it for free or don't know it yet: Duesko still reminds you to cancel before the trial ends, so you're never charged by surprise.</p>
+<p><b>Check for Updates…</b> is now also in Settings → About and in the “⋯” menu of the menu bar window, so you can find it even with Duesko hidden from the Dock. Every update shows what's new before it installs.</p>
+<p><b>Пробні підписки без ціни.</b> Увімкніть «Пробний період» і залиште ціну порожньою, якщо отримали підписку безкоштовно або ще не знаєте ціни: Duesko однаково нагадає скасувати до кінця пробного періоду, щоб гроші не зняли несподівано.</p>
+<p><b>«Перевірити оновлення…»</b> тепер є й у Налаштуваннях → «Про програму» та в меню «⋯» вікна з рядка меню, тож її легко знайти навіть тоді, коли Duesko прихований з Dock. Кожне оновлення спершу показує, що нового.</p>
+<h3>Duesko 0.6.1</h3>
 <p><b>Hide Duesko from the Dock or the menu bar.</b> Settings → General → “Show in the Dock” and “Show in the menu bar”. Duesko keeps running either way; one of the two always stays on, so you can get back to it.</p>
 <p><b>Приховайте Duesko з Dock або з рядка меню.</b> Налаштування → Загальні → «Показувати в Dock» і «Показувати в рядку меню». Duesko працює далі в будь-якому разі; одне з двох завжди лишається ввімкненим, щоб до нього можна було повернутися.</p>
 <h3>Duesko 0.6</h3>
@@ -25,8 +30,8 @@
 <h3>Duesko 0.4</h3>
 <p><b>Dates in another year show the year.</b> A yearly subscription's next charges now read, for example, “Thu, Nov 18, 2027”, so they can't be mistaken for this year's.</p>
 <p><b>Дати в іншому році показують рік.</b> Наступні списання щорічної підписки тепер виглядають, наприклад, як «чт, 18 лист. 2027 р.», тож їх не сплутати з цьогорічними.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.6.1/Duesko.dmg"
-                 length="10930375" type="application/octet-stream" sparkle:edSignature="1SMhXw1Q/m7AqzGU176DZ2t4RhUN62c+Tom7dn6DZHqLn09Z7ULQJqHQoXkH7I5rQGDccN9rAHr2mZjHccDOCw=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.6.2/Duesko.dmg"
+                 length="10890681" type="application/octet-stream" sparkle:edSignature="9KN4pqsW/7284OSmci6O1HWD3jAbdr2I5Qh8Xu1UO3g1HM9EaRQfZsx9RCVyUTA9WseIEEuS0R0AWOnzgiSYDg=="/>
     </item>
   </channel>
 </rss>

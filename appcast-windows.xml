@@ -5,12 +5,17 @@
     <link>https://duesko.stepanix.com/appcast-windows.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.6.1</title>
-      <pubDate>Thu, 19 Nov 2026 11:44:46 +0000</pubDate>
-      <sparkle:version>0.6.1</sparkle:version>
-      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+      <title>Duesko 0.6.2</title>
+      <pubDate>Thu, 19 Nov 2026 20:21:27 +0000</pubDate>
+      <sparkle:version>0.6.2</sparkle:version>
+      <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h3>Duesko 0.6.1</h3>
+      <description><![CDATA[<h3>Duesko 0.6.2</h3>
+<p><b>Free trials without a price.</b> Turn on “Free trial” and leave the price empty if you got it for free or don't know it yet: Duesko still reminds you to cancel before the trial ends, so you're never charged by surprise.</p>
+<p><b>Check for Updates…</b> is now also in Settings → About and in the menu of Duesko's icon in the notification area.</p>
+<p><b>Пробні підписки без ціни.</b> Увімкніть «Пробний період» і залиште ціну порожньою, якщо отримали підписку безкоштовно або ще не знаєте ціни: Duesko однаково нагадає скасувати до кінця пробного періоду, щоб гроші не зняли несподівано.</p>
+<p><b>«Перевірити оновлення…»</b> тепер є й у Налаштуваннях → «Про програму» та в меню значка Duesko в області сповіщень.</p>
+<h3>Duesko 0.6.1</h3>
 <p><b>Simpler Settings → Appearance.</b> The app icon colours are gone: Windows shows Duesko's own icon in the Start menu, File Explorer and on pinned taskbar buttons anyway. Light and Dark and the eight colour schemes stay.</p>
 <p><b>Простіші Налаштування → Вигляд.</b> Вибору кольору іконки програми більше немає: Windows однаково показує власну іконку Duesko в меню «Пуск», Файловому провіднику й на закріплених кнопках панелі завдань. Світлий і темний вигляд та вісім колірних схем лишаються.</p>
 <h3>Duesko 0.6</h3>
@@ -18,16 +23,21 @@
 <p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
 <p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
 <p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.1/Duesko-0.6.1-x64.msi"
-                 length="75526636" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="uY7QN1Dc62ezh4IiBPxKEQh+0T1sNZlG5zONXpujdVvo80wNYWIjLuPH+wBg8sevM5O1tMnhg5ZtXjpT07T6BA=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.2/Duesko-0.6.2-x64.msi"
+                 length="75534828" type="application/octet-stream" sparkle:os="windows-x64" sparkle:edSignature="CEyNj3iCHLJNO4/lh7cNPfo09yFDRu8tN6PLBaJDLtSHHAZCsAIacyGxyog3/uoTCj+LUysp4qQ51WshN21pDg=="/>
     </item>
     <item>
-      <title>Duesko 0.6.1</title>
-      <pubDate>Thu, 19 Nov 2026 11:44:46 +0000</pubDate>
-      <sparkle:version>0.6.1</sparkle:version>
-      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+      <title>Duesko 0.6.2</title>
+      <pubDate>Thu, 19 Nov 2026 20:21:27 +0000</pubDate>
+      <sparkle:version>0.6.2</sparkle:version>
+      <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>10.0.19041</sparkle:minimumSystemVersion>
-      <description><![CDATA[<h3>Duesko 0.6.1</h3>
+      <description><![CDATA[<h3>Duesko 0.6.2</h3>
+<p><b>Free trials without a price.</b> Turn on “Free trial” and leave the price empty if you got it for free or don't know it yet: Duesko still reminds you to cancel before the trial ends, so you're never charged by surprise.</p>
+<p><b>Check for Updates…</b> is now also in Settings → About and in the menu of Duesko's icon in the notification area.</p>
+<p><b>Пробні підписки без ціни.</b> Увімкніть «Пробний період» і залиште ціну порожньою, якщо отримали підписку безкоштовно або ще не знаєте ціни: Duesko однаково нагадає скасувати до кінця пробного періоду, щоб гроші не зняли несподівано.</p>
+<p><b>«Перевірити оновлення…»</b> тепер є й у Налаштуваннях → «Про програму» та в меню значка Duesko в області сповіщень.</p>
+<h3>Duesko 0.6.1</h3>
 <p><b>Simpler Settings → Appearance.</b> The app icon colours are gone: Windows shows Duesko's own icon in the Start menu, File Explorer and on pinned taskbar buttons anyway. Light and Dark and the eight colour schemes stay.</p>
 <p><b>Простіші Налаштування → Вигляд.</b> Вибору кольору іконки програми більше немає: Windows однаково показує власну іконку Duesko в меню «Пуск», Файловому провіднику й на закріплених кнопках панелі завдань. Світлий і темний вигляд та вісім колірних схем лишаються.</p>
 <h3>Duesko 0.6</h3>
@@ -35,8 +45,8 @@
 <p><b>Report a Problem…</b> in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
 <p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude для Windows. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
 <p><b>«Повідомити про проблему…»</b> у Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.1/Duesko-0.6.1-arm64.msi"
-                 length="72479152" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="v8ava+xF9xrSDS5ZOh+KT8JkrFE2e4zormRTFi3YQvOQg5RmjSAQUWMVJZwlaP8B/x3GyP4Dy394BXhw/9WCBQ=="/>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/windows-v0.6.2/Duesko-0.6.2-arm64.msi"
+                 length="72458672" type="application/octet-stream" sparkle:os="windows-arm64" sparkle:edSignature="fRzft50VxMCYBUioHgL4NL26GHu23lCMEJ2PXlgcy2MmZSuOHYBZS4egrKCdRMdVYeJ3h/h55fj14oEaJ07RCg=="/>
     </item>
   </channel>
 </rss>
