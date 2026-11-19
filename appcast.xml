@@ -5,21 +5,15 @@
     <link>https://duesko.stepanix.com/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Duesko 0.6</title>
-      <pubDate>Wed, 18 Nov 2026 23:53:07 +0000</pubDate>
-      <sparkle:version>6</sparkle:version>
-      <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+      <title>Duesko 0.6.1</title>
+      <pubDate>Thu, 19 Nov 2026 09:42:56 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<p><b>Ask Claude about your subscriptions (Duesko Pro).</b> Settings → Data → Claude adds Duesko to the Claude app. Then ask, for example, “What do I pay for streaming?” or “What's due next week?”. Claude can only read, never change anything.</p>
-<p><b>Report a Problem…</b> in the Help menu and in Settings → About sends a note straight to the developer, with technical details you can see first and turn off. No names, amounts or notes.</p>
-<p><b>Columns in the subscription table</b> can be dragged into any order and hidden or shown again by right-clicking a column header. Duesko remembers your choice.</p>
-<p><b>Restoring a backup</b> made on the same Mac now keeps your own categories, payment methods and lists.</p>
-<p><b>Питайте Claude про свої підписки (Duesko Pro).</b> Налаштування → Дані → Claude додає Duesko до програми Claude. Тоді запитайте, наприклад: «Скільки я плачу за стримінг?» або «Що списується наступного тижня?». Claude може лише читати і нічого не змінює.</p>
-<p><b>«Повідомити про проблему…»</b> у меню «Довідка» та в Налаштуваннях → «Про програму» надсилає повідомлення просто розробнику разом із технічними даними, які видно заздалегідь і можна вимкнути. Без назв, сум і нотаток.</p>
-<p><b>Стовпчики таблиці підписок</b> можна перетягувати в будь-якому порядку, а також ховати й повертати правим клацанням на заголовку. Duesko запам'ятовує ваш вибір.</p>
-<p><b>Відновлення резервної копії</b>, зробленої на цьому ж Mac, тепер зберігає ваші власні категорії, способи оплати та списки.</p>]]></description>
-      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.6/Duesko.dmg"
-                 length="10920618" type="application/octet-stream" sparkle:edSignature="hhHF7jLZ+y+gWKu7FLcxXf2v6CLNFY10h4Q7LQ+C6UDUsYVtu+NyeoSCXXsD+5jPtmI0hlMSsLnuRzKN1Yk4AA=="/>
+      <description><![CDATA[<p><b>Hide Duesko from the Dock or the menu bar.</b> Settings → General → “Show in the Dock” and “Show in the menu bar”. Duesko keeps running either way; one of the two always stays on, so you can get back to it.</p>
+<p><b>Приховайте Duesko з Dock або з рядка меню.</b> Налаштування → Загальні → «Показувати в Dock» і «Показувати в рядку меню». Duesko працює далі в будь-якому разі; одне з двох завжди лишається ввімкненим, щоб до нього можна було повернутися.</p>]]></description>
+      <enclosure url="https://github.com/stepsergius/duesko-app/releases/download/v0.6.1/Duesko.dmg"
+                 length="10930375" type="application/octet-stream" sparkle:edSignature="1SMhXw1Q/m7AqzGU176DZ2t4RhUN62c+Tom7dn6DZHqLn09Z7ULQJqHQoXkH7I5rQGDccN9rAHr2mZjHccDOCw=="/>
     </item>
   </channel>
 </rss>
